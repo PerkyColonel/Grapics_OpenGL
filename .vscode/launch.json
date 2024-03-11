@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "c++ Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/builds/windows/main",
+      "args": [],
+      "preLaunchTask": "Build",
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "linux": {
+        "program": "${workspaceRoot}/builds/linux/main",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      "windows": {
+        "program": "${workspaceRoot}/builds/windows/main",
+        "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe"
+      },
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/tmche/Desktop/Game-dev/OpenGL/src",
+      "program": "c:/Users/tmche/Desktop/Game-dev/OpenGL/src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
