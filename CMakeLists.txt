@@ -36,6 +36,6 @@ include_directories("${CMAKE_BINARY_DIR}/glm/include")
 include_directories("${CMAKE_SOURCE_DIR}/dependencies/GLAD/include")
 
 # # Add your executable and link against GLFW
-add_executable(GRAPHICS_OPENGL src/main.cpp src/engine.cpp)
+add_executable(GRAPHICS_OPENGL src/main.cpp)
 target_link_libraries(GRAPHICS_OPENGL PRIVATE glfw)
 
